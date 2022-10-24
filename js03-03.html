@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>예제3</title>
+    <style>
+        td{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+<tr>
+    <th colspan="6">16미만</th>
+    <th colspan="4">16이상~22미만</th>
+    <th colspan="4">22이상~28미만</th>
+    <th colspan="3">28이상~32미만</th>
+    <th colspan="6">32~이상</th>
+</tr>
+<tr>
+    <td style="background-color:purple" ></td>
+    <td style="background-color:purple"></td>
+    <td style="background-color:purple"></td>
+    <td style="background-color:purple"></td>
+    <td style="background-color:purple"></td>
+    <td style="background-color:purple"></td>
+    <td style="background-color:blue"></td>
+    <td style="background-color:blue"></td>
+    <td style="background-color:blue"></td>
+    <td style="background-color:blue"></td>
+    <td style="background-color:yellow"></td>
+    <td style="background-color:yellow"></td>
+    <td style="background-color:yellow"></td>
+    <td style="background-color:yellow"></td>
+    <td style="background-color:orange"></td>
+    <td style="background-color:orange"></td>
+    <td style="background-color:orange"></td>
+    <td style="background-color:red"></td>
+    <td style="background-color:red"></td>
+    <td style="background-color:red"></td>
+    <td style="background-color:red"></td>
+    <td style="background-color:red"></td>
+    <td style="background-color:red"></td>
+</tr>
+<tr> 
+   <th colspan="6">정상온도를 벗어났습니다</th>
+   <th colspan="4">시원하네요</th>
+   <th colspan="4">보통이에요</th>   
+   <th colspan="3">갑갑하네요</th>  
+   <th colspan="6">정상온도를 벗어났습니다</th>   
+</tr>
+</table>
+
+<script>
+let a =Number(prompt('온도를 입력해주세요'));
+let b;
+
+if(a<16){
+    b='정상온도를 벗어났습니다';
+}
+else if(a<22){
+    b='시원하네요';
+}
+else if(a<28){
+    b='보통이네요';
+}
+else if(a<32){
+    b='갑갑하네요';
+}
+else {
+    b='정상온도를 벗어났습니다';
+}
+
+document.write('지금 온도는 '+a +' 이며, 상태는 '+b);
+
+</script>
+</body>
+</html>

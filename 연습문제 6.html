@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let list=''
+let payment = Number(prompt('5만원입력하세요'));
+let cost = Number(prompt('16380원을 입력하세요'));
+let change  = payment-cost
+
+let a = parseInt(change/50000);
+
+change=change%50000
+let b= parseInt(change/10000);
+change=change%10000
+let c= parseInt(change/5000);
+change=change%5000
+let d =parseInt (change/1000);
+change=change%1000
+let e= parseInt (change/500);
+change=change%500
+let f= parseInt(change/1000);
+change=change%100
+let g= parseInt(change/10);
+change=change%10
+
+list +=`<table border="1">`;
+list +=`<tr>`;
+list +=`    <th>돈</th>`;
+list +=`    <th>개수</th>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`<td>50000</td>`;
+list +=`<td>${a}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>10000</td>`;
+list +=`  <td>${b}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>5000</td>`;
+list +=`  <td>${c}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>1000</td>`;
+list +=`  <td>${d}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>500</td>`;
+list +=`  <td>${e}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>100</td>`;
+list +=`  <td>${f}</td>`;
+list +=`</tr>`;
+list +=`<tr>`;
+list +=`  <td>10</td>`;
+list +=`  <td>${g}</td>`;
+list +=`</tr>`;
+list +=`</table>`;
+
+document.write(list);
+
+</script>
+</body>
+</html>

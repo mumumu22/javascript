@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+
+    /* display: grid; */
+    /* grid-template-columns: 100px 100px 200px 200px ; */
+    /* grid-template-rows: 150px 150px; */
+}
+/* fr 단위를 넣으면  1:1:1 일정하게 알아볼수 있는 수치?! */
+/* 가로로 12개 repeat{10,} */
+.a{
+background-color: coral;
+grid-column-start: 1;
+grid-column-end: 6;
+}
+.b{
+background-color: gold;
+
+}
+.c{
+    background-color: chartreuse;
+}
+.d{
+    background-color: cornflowerblue;
+}
+.e{
+
+    background-color: aqua;
+}
+.f{
+background-color: blue;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="a">1</span>
+        <span class="b">2</span>
+        <span class="c">3</span>
+        <span class="d">4</span>
+        <span class="e">5</span>
+        <span class="f">6</span>
+    </div>
+</body>
+</html>

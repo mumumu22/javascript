@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>연습문제</title>
+
+<style>
+
+
+
+</style>
+
+<script>
+document.write('<h2>예제 1번</h2>')
+let r = prompt('반지름을 입력하세요');
+const pi = 3.14;
+
+r=Number(r);
+let s = pi*(r*r);
+let L = 2*pi *r;
+
+document.write('원의 넓이' + s + '<br>');
+document.write('원의 둘레' + L +'<br>');
+
+document.write('<h2>예제2번</h2>')
+let ex_rate = prompt('달러 환율을 입력해주세요');
+let dollar =  prompt('반환하고자 하는 달러를 입력해주세요');
+document.write('달러 환율 : ' +ex_rate +'<br>변환하고자 하는 달러 : $ '+dollar+ '<br>');
+ex_rate =Number(ex_rate);
+dollar = Number(dollar);
+
+document.write('원화로' + ex_rate* dollar+' 입니다.');
+
+
+document.write('<h2>구구단계산</h2>')
+let num = Number (prompt('2~9사이 값을  입력하세요'));
+let list ='';
+list +=`<table border>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x1=</td>`;
+list +=`        <td>${num*1}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x2=</td>`;
+list +=`        <td>${num*2}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x3=</td>`;
+list +=`        <td>${num*3}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x4=</td>`;
+list +=`        <td>${num*4}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x5=</td>`;
+list +=`        <td>${num*5}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x6=</td>`;
+list +=`        <td>${num*6}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x7=</td>`;
+list +=`        <td>${num*7}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x8=</td>`;
+list +=`        <td>${num*8}</td>`;
+list +=`    </tr>`;
+list +=`    <tr>`;
+list +=`        <td>${num}x9=</td>`;
+list +=`        <td>${num*9}</td>`;
+list +=`    </tr>`;
+list += `</table>`;
+
+document.write(list);
+
+</script>
+
+
+
+</head>
+<body>
+    
+
+</body>
+</html>

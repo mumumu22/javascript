@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>확률게임만들어보기</title>
+
+    
+</head>
+<body>
+    <script>
+
+        //문제: 4종류의 등급별 아이템을 만드시오. 단, 1등급은 안나오게 하시오.
+const ran= parseInt(Math.random()*100+5); //1등급은 안나오게 하기 위해서 100+5 해줌 
+
+console.log(ran)
+if(ran>7&&ran<=10){
+document.write('유니크 등급');
+}
+if(ran>4&& ran<=7){
+    document.write('전설등급');
+}
+if(ran<=4){
+    document.write('신화등급');
+}
+if(ran>10){
+    document.write('레어등급');
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

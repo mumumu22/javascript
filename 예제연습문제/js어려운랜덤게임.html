@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+   <script>
+const ran= parseInt(Math.random()*100+1)
+let user= " ";
+let ct= 5
+while(ct>0){
+    ct--
+    user= Number(prompt('1~100까지 중에 값을 맞추시오'))
+    if(ran==user){
+        alert('정답입니다. 값은:'+ran);break
+    }else if(ran>user){
+        alert('정답이 더 큰 수 입니다. 남은 기회:'+ct)
+    }else if(ran<user){
+        alert('정답에 더 작은 수 입니다.남은 기회:'+ct)
+    }
+}
+if(ran=user){
+    document.write('<h1>성공을 축하합니다</h1>')
+}else{
+    document.write('<h1>기회를 모두 소진하였습니다</h1>')
+}
+
+
+
+   </script>
+    
+</body>
+</html>

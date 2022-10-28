@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //어디서부터 계산할까요? 1 어디까지 계산할까요? 10
+        //1부터 10까지 더한 수 구하는 문제 
+    //let a = Number (prompt('어디서부터 계산할까요?'));
+    //let b = Number (prompt('어디까지 계산할까요?'));
+
+   // let sum= 0;
+        //for(let j=1; j<=10; j++){
+         // sum= sum+ j;
+       // }
+       //document.write(sum);
+
+
+let a =Number(prompt('어디서부터 계산할까요?'));
+let b =Number(prompt('어디까지 짝수 계산할까요?'));
+
+let sum=0;
+  for(let i=1; i<=100; i++){
+
+    if(i%2==0){
+        sum+=i;
+    }
+  }
+  document.write(a+'부터'+b+'까지 짝수만 합하면'+sum)
+
+
+
+
+    </script>       
+</body>
+</html>

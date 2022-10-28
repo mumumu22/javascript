@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>로또 랜덤번호 축출하기</title>
+</head>
+<body>
+    <script>
+    const number =[]
+    while(number.length<6){
+let ran = Math.floor(Math.random()*45)+1
+    if(number.indexOf(ran)===-1){
+       number.push(ran)
+      }
+    }
+    console.log(number)
+    
+    </script>
+     
+</body>
+</html> 
